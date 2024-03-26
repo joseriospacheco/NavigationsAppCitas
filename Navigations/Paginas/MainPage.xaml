@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navigations.Paginas.MainPage"
+             Title="App CITAS">
+    <ScrollView>
+        <VerticalStackLayout
+        Padding="30,0"
+        Spacing="30">
+
+      <Picker x:Name="picker"
+      Title="Tipo de documento">
+      <Picker.ItemsSource>
+      <x:Array Type="{x:Type x:String}">
+      <x:String>Cedula de la Ciudadania</x:String>
+      <x:String>Documento de Identidad</x:String>
+      <x:String>Registro Civil</x:String>
+      </x:Array>
+      </Picker.ItemsSource>
+      </Picker>
+      <Label Text="Usuario" VerticalOptions="Center"/>
+      <Entry x:Name="EntryUsuario" Placeholder="Campo de texto"/>
+      <Label Text="Contraseña" VerticalOptions="Center"/>
+      <Entry x:Name="EntryContraseña" Placeholder="Campo de texto" IsPassword="True"/>
+      <Button Text="Iniciar Sesion" Clicked="Button_ClickedAsync" TextColor ="White" BackgroundColor="Fuchsia"/>
+      <Label Text="¿Has olvidado tu contraseña?" HorizontalOptions="Center"/>
+
+      </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navigations.Paginas.RealiarCitasPage"
+             Title="App CITAS">
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="30">
+        
+        <Label Text="Fecha" VerticalOptions="Center"/>
+        <Entry x:Name="EntryFecha" Placeholder="Campo de texto"/>
+
+        <Picker x:Name="picker"
+          Title="Especialidad">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Neufrologia</x:String>
+                    <x:String>Medicina Intensiva</x:String>
+                    <x:String>medicina Interna</x:String>
+                    <x:String>Cardiologia</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Picker x:Name="Item"
+        Title="Medico(a)">
+            <Picker.ItemsSource>
+                <x:Array Type="{x:Type x:String}">
+                    <x:String>Jose David Rios</x:String>
+                    <x:String>Oscar Julian Escobar Camaño</x:String>
+                    <x:String>Omar Yesid Lozano</x:String>
+                    <x:String>Cristian Vanegas</x:String>
+                </x:Array>
+            </Picker.ItemsSource>
+        </Picker>
+
+        <Button Text="Reservar" Clicked="Button_Clicked" TextColor="White" BackgroundColor="Fuchsia"/>
+    </VerticalStackLayout>
+</ContentPage>

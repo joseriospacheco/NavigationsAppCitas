@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Navigations.Paginas.Page4"
+             Title="App CITAS">
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="190">
+        
+        <Label Text="Cita reservada" FontSize="40" TextColor="Fuchsia" HorizontalOptions="Center"/>
+
+        <Label Text="La cita ha sido cancelada" FontSize ="25" HorizontalOptions="Center" TextColor="Black"/>
+
+        <Button Text="Aceptar" Clicked="Button_Clicked" TextColor="White" BackgroundColor="Fuchsia"/>
+    </VerticalStackLayout>
+</ContentPage>
