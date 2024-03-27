@@ -12,8 +12,8 @@ namespace Navigations
 
             Routing.RegisterRoute("LoginPage", typeof(MainPage));
             Routing.RegisterRoute("Page1", typeof(MenuPage));
-            Routing.RegisterRoute("Page2", typeof(RealiarCitasPage));
-
+            Routing.RegisterRoute("Page2", typeof(AgendarCitaPage));
+            Routing.RegisterRoute("Page3", typeof(CitaCanceladaPage));
         }
     }
 }

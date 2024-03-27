@@ -1,9 +1,9 @@
 using Dominio;
 namespace Navigations.Paginas;
 
-public partial class Page4 : ContentPage
+public partial class CitaCanceladaPage : ContentPage
 {
-	public Page4()
+	public CitaCanceladaPage()
 	{
 		InitializeComponent();
 	}
@@ -11,5 +11,6 @@ public partial class Page4 : ContentPage
     private  async void Button_Clicked(object sender, EventArgs e)
     {
         await Navigation.PushAsync(new MenuPage());
+
     }
 }

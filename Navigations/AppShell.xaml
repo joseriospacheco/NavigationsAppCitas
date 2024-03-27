@@ -15,7 +15,7 @@
 
     <ShellContent
         Title="Loading"
-        ContentTemplate="{DataTemplate pages:RealiarCitasPage}"
+        ContentTemplate="{DataTemplate pages:AgendarCitaPage}"
         Route="Page2"
         Shell.FlyoutBehavior="Disabled"
         Shell.FlyoutItemIsVisible="False" />
@@ -24,6 +24,13 @@
         Title="Loading"
         ContentTemplate="{DataTemplate pages:MenuPage}"
         Route="Page1"
+        Shell.FlyoutBehavior="Disabled"
+        Shell.FlyoutItemIsVisible="False" />
+
+    <ShellContent
+        Title="Loading"
+        ContentTemplate="{DataTemplate pages:CitaCanceladaPage}"
+        Route="Page3"
         Shell.FlyoutBehavior="Disabled"
         Shell.FlyoutItemIsVisible="False" />
 

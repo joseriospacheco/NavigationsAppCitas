@@ -8,7 +8,11 @@
         Spacing="30">
         
         <Label Text="Cita reservada" FontSize="40" TextColor="Fuchsia" HorizontalOptions="Center"/>
-        
+
+
+        <Label Text="Número" VerticalOptions="Center"/>
+        <Entry x:Name="EntryNumero" IsEnabled="False"/>
+
         <Label Text="Dia" VerticalOptions="Center"/>
         <Entry x:Name="EntryDia" IsEnabled="False"/>
 

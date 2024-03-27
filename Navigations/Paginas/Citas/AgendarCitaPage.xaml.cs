@@ -2,10 +2,10 @@ using Dominio;
 
 namespace Navigations.Paginas;
 
-public partial class RealiarCitasPage : ContentPage
+public partial class AgendarCitaPage : ContentPage
 {
-    private Persona persona;
-    public RealiarCitasPage()
+    private Cita cita;
+    public AgendarCitaPage()
 	{
 		InitializeComponent();
 
@@ -17,7 +17,10 @@ public partial class RealiarCitasPage : ContentPage
         DateOnly fecha;
         try
         {
-            fecha = DateOnly.Parse(EntryFecha.Text);
+
+            var x = DatePickeFecha.Date;
+
+            fecha = DateOnly.FromDateTime(x);
         }
         catch (FormatException)
         {
@@ -26,19 +29,25 @@ public partial class RealiarCitasPage : ContentPage
             return;
         }
 
+
+        var seed = Environment.TickCount;
+        var random = new Random(seed);
+
+
         // Crea un objeto Persona
-        persona = new Persona
+        cita = new Cita
         {
             // Suponiendo que Persona.Fecha es una cadena por ahora
+            Numero = random.Next(1000,10000),
             Fecha = fecha,
             Especialidad = picker.SelectedItem.ToString(),
             Medico = Item.SelectedItem.ToString()
         };
 
         // Comprobar si se creó la persona
-        if (persona != null && persona.Fecha != null)
+        if (cita != null && cita.Fecha != null)
         {
-            await Navigation.PushAsync(new CitaCreadaPage(persona));
+            await Navigation.PushAsync(new CitaCreadaPage(cita));
         }
     }
 }

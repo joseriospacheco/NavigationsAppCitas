@@ -73,14 +73,14 @@
 	  <Compile Update="Paginas\MenuPage.xaml.cs">
 	    <DependentUpon>MenuPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Paginas\Citas\RealiarCitasPage.xaml.cs">
-	    <DependentUpon>RealiarCitasPage.xaml</DependentUpon>
+	  <Compile Update="Paginas\Citas\AgendarCitaPage.xaml.cs">
+	    <DependentUpon>AgendarCitaPage.xaml</DependentUpon>
 	  </Compile>
 	  <Compile Update="Paginas\Citas\CitaCanceladaPage.xaml.cs">
 	    <DependentUpon>CitaCanceladaPage.xaml</DependentUpon>
 	  </Compile>
-	  <Compile Update="Paginas\Citas\CitaCreadaPage.xaml.cs">
-	    <DependentUpon>CitaCreadaPage.xaml</DependentUpon>
+	  <Compile Update="Paginas\Citas\CitaAgendadPage.xaml.cs">
+	    <DependentUpon>CitaAgendadPage.xaml</DependentUpon>
 	  </Compile>
 	</ItemGroup>
 
@@ -88,10 +88,10 @@
 	  <MauiXaml Update="Paginas\MenuPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Paginas\Citas\RealiarCitasPage.xaml">
+	  <MauiXaml Update="Paginas\Citas\AgendarCitaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
-	  <MauiXaml Update="Paginas\Citas\CitaCreadaPage.xaml">
+	  <MauiXaml Update="Paginas\Citas\CitaAgendadPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Paginas\Citas\CitaCanceladaPage.xaml">
